@@ -11,7 +11,16 @@
     <h1>hello world welcome to socket.IO</h1>
 
     <script>
-        var socket = io()
+        var socket = io();
+        socket.on('message',function(data){
+            document.write(data)
+        })
+        socket.on('customEvent',function(data){
+            document.write(data.data)
+        })
+
+        //sending event client to server
+        socket.emit('myCustom',{data:"hello world from client side"})
     </script>
 </body>
 </html>

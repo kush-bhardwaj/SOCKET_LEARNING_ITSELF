@@ -1,0 +1,5 @@
+EVENTS IN SCOKET IO
+1. what are event :- connection / disconnect
+2.what are pre-revserved EVENTS in socket io :-{server side: connection, disconnect, message/send , reconnect , ping , join, leave};
+3.client side events:- connect, connnect_error , connect_timeout ,reconnect,.......;
+4. custom events.
